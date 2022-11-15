@@ -4,6 +4,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import br.com.eduardomelle.dto.PersonSaveResponseDTO;
 import br.com.eduardomelle.personspringbootapi.model.Person;
 import br.com.eduardomelle.personspringbootapi.repository.PersonRepository;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/people")
 public class PersonResource {
